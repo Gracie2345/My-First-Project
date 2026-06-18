@@ -284,6 +284,7 @@ nav {
     left: 90px;
     transform: translateY(-50%);
     max-width: 550px;
+    z-index: 3;
 }
 
 .project_description_title, 
@@ -291,14 +292,8 @@ nav {
 .project_description_para,
 .project_description_link {
     text-align: left;
-    color:#cb2121
+    color:#cfc4c4
 }
-
-.blurred-image-container {
-    position: relative;
-    overflow: hidden; /* This helps to keep the blurred part contained */
-}
-
 
 
 .project_description_title {
