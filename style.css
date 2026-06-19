@@ -222,7 +222,7 @@ nav {
 }
 
 
-@keyframes fade-up {
+@keyframes fade_up {
     0% {
         opacity: 0;
         transform: translateY(40px);
@@ -253,12 +253,12 @@ nav {
 .about_me_img {
     width: 100%;
     margin-top:100px; /* added by me to make space between the icons */
-    animation: fade_in 1200ms 800 ms backwards;
+    animation: fade_in 1200ms 800ms backwards;
 }
 
 @keyframes fade_in {
     0% {
-        opacity:1;
+        opacity:0;
     }
     100% {
         opacity: 1;
