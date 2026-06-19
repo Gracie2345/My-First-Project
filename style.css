@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 h1, h2, h3, h4, h5, h6, span {
     color: black;
     text-align: center;
@@ -21,6 +25,31 @@ h1{
 p {
     line-height: 1.5;
     font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+.link_hover_effect:after{
+    content:"";
+    position: absolute;
+    height:3px;
+    width:100%;
+    bottom: -3px;
+    right:0;
+    transition: all 300ms ease;
+}
+
+.link_hover_effect_white:after{
+    background-color: #000000;
+}
+
+
+.link_hover_effect:hover:after{
+    width:100%;
+    left: 0;
 }
 
 
@@ -80,7 +109,6 @@ nav {
 .nav_link_anchor {
     margin:0 12px;
     color: #242424;         
-    text-decoration: none; 
     font-weight: 700;
 }
 
@@ -159,7 +187,6 @@ nav {
 .about_me_links {
     font-size: 20px;
     color: #242424;
-    text-decoration: none;
     padding: 0 16px;
 }
 
@@ -328,7 +355,6 @@ nav {
 .project_description_links{
     font-size: 20px;
     margin-right:16px;
-    text-decoration: none;
 }
 
 
@@ -337,7 +363,21 @@ footer {
     background-color: #dcadad;
 }
 
+
+
+.footer_social_list{
+    max-width: 500px;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:28px;
+}
+
 .footer_row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 8% 0;
 }
 
@@ -345,3 +385,33 @@ footer {
     width: 70px;
     height:70px;
 }
+
+.footer_social_link,
+.footer_copyright,
+.footer_logo_popper{
+    color: #fff;
+}
+
+.footer_logo_popper{
+    color: #fff
+}
+
+.footer_logo_popper{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    Opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer_anchor {
+    margin-bottom:20px;
+    position: relative;
+}
+
+.footer_anchor:hover .footer_logo_popper {
+    transform:translateX(60px);
+    Opacity: 1;
+}
+
